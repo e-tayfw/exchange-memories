@@ -2,10 +2,10 @@
 import React from "react";
 
 const photos = [
-  "/src/assets/images/ab1.jpeg",
-  "/src/assets/images/ab2.jpeg",
-  "/src/assets/images/ab3.jpeg",
-  "/src/assets/images/ab4.jpeg",
+  "/public/images/ab1.jpeg",
+  "/public/images/ab2.jpeg",
+  "/public/images/ab3.jpeg",
+  "/public/images/ab4.jpeg",
 ];
 
 export default function PhotoGrid() {
