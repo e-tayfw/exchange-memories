@@ -5,7 +5,7 @@ import 'aos/dist/aos.css'
 import { memories, Memory } from '../data/memories'
 import MemoryCard from '../components/MemoryCard'
 import MemoryModal from "../components/MemoryModal";
-import MultiSelectDropdown from '../components/MultiSelectDropDown';
+import MultiSelectDropdown from '../components/MultiSelectDropdown';
 import DateFilterDropdown from '../components/DateFilterDropdown';
 
 export default function Gallery() {
