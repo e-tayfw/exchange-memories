@@ -1,11 +1,16 @@
 // src/components/PhotoGrid.tsx
 import React from "react";
+import ab1 from "../assets/images/ab1.jpeg";
+import ab2 from "../assets/images/ab2.jpeg";
+import ab3 from "../assets/images/ab3.jpeg";
+import ab4 from "../assets/images/ab4.jpeg";
 
 const photos = [
-  "/public/images/ab1.jpeg",
-  "/public/images/ab2.jpeg",
-  "/public/images/ab3.jpeg",
-  "/public/images/ab4.jpeg",
+    ab1,
+    ab2,
+    ab3,
+    ab4,
+    // Add more photos as needed
 ];
 
 export default function PhotoGrid() {

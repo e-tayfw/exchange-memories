@@ -1,3 +1,13 @@
+import hala_madrid from "../assets/images/hala_madrid.jpeg"
+import madrid1 from "../assets/images/realMadrid1.jpeg";
+import madrid2 from "../assets/images/realMadrid2.jpeg";
+import madrid3 from "../assets/images/realMadrid3.jpeg";
+import bikeGrp from "../assets/images/bike_grp_photo.jpeg";
+import granadaBike1 from "../assets/images/granadaBike1.jpeg";
+import granadaBike2 from "../assets/images/granadaBike2.jpeg";
+import granadaFirstMeal from "../assets/images/granada_first_meal.jpeg"; 
+import granadaFirstMeal2 from "../assets/images/granada_first_meal2.jpeg";       
+
 export interface Memory {
     id: string;
     title: string;
@@ -14,12 +24,7 @@ export const memories: Memory[] = [
     country: "Madrid",
     description:
       "Attended my first football match in Madrid, witnessing the passion of the fans and the excitement of the game.",
-    image: [
-      "/public/images/hala_madrid.jpeg",
-      "/public/images/realMadrid1.jpeg",
-      "/public/images/realMadrid2.jpeg",
-      "/public/images/realMadrid3.jpeg",
-    ],
+    image: [hala_madrid, madrid1, madrid2, madrid3],
     date: "2025-05-14",
   },
   {
@@ -28,10 +33,7 @@ export const memories: Memory[] = [
     country: "Granada",
     description:
       "Wandered through the beautiful outskirts of Granada, enjoying the scenic views and rich history through mountain biking.",
-    image: ["/public/images/bike_grp_photo.jpeg",
-        "/public/images/granadaBike1.jpeg",
-        "/public/images/granadaBike2.jpeg"
-    ],
+    image: [bikeGrp, granadaBike1, granadaBike2],
     date: "2025-05-03",
   },
   {
@@ -40,9 +42,7 @@ export const memories: Memory[] = [
     country: "Granada",
     description:
       "Enjoy local Andalusian cuisine at a charming restaurant in Granada, beside the Alhambra. Love the tapas culture and affordable prices here!",
-    image: ["/public/images/granada_first_meal.jpeg",
-        "/public/images/granada_first_meal2.jpeg",
-    ],
+    image: [granadaFirstMeal, granadaFirstMeal2],
     date: "2025-05-02",
   },
 ];
