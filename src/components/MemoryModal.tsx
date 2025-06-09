@@ -44,7 +44,7 @@ export default function MemoryModal({ memory, onClose }: MemoryModalProps) {
         transition={{ duration: 0.3 }}
       >
         <motion.div
-          className="bg-white rounded-lg overflow-hidden max-w-4xl max-h-[90vh] w-full p-8 relative"
+          className="bg-white rounded-lg max-w-4xl max-h-[90vh] w-full p-8 relative overflow-auto flex flex-col"
           onClick={(e) => e.stopPropagation()}
           initial={{ scale: 0.8, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
@@ -58,7 +58,7 @@ export default function MemoryModal({ memory, onClose }: MemoryModalProps) {
             ✕
           </button>
 
-          <div className="relative w-full flex items-center justify-center">
+          <div className="relative w-full flex-shrink-0 flex items-center justify-center">
             <AnimatePresence initial={false} custom={direction}>
               <motion.img
                 key={currentIndex}
@@ -96,7 +96,7 @@ export default function MemoryModal({ memory, onClose }: MemoryModalProps) {
             )}
           </div>
 
-          <div className="px-8 py-4 space-y-4">
+          <div className="px-8 py-4 space-y-4 flex-1 overflow-y-auto">
             <h3 className="text-2xl font-semibold">{memory.title}</h3>
             <p className="text-gray-600">{memory.date}</p>
             <p className="text-gray-700">{memory.description}</p>

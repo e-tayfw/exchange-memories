@@ -25,7 +25,8 @@ export default function Gallery() {
   // filter logic
   const filtered = memories.filter(m => {
     const byCountry = countryFilter.length === 0 || countryFilter.includes(m.country);
-    const byDate = !dateFilter || m.date === dateFilter;
+    // dateFilter can be "YYYY", "YYYY-MM", or "YYYY-MM-DD"
+    const byDate = !dateFilter || m.date.startsWith(dateFilter);
     return byCountry && byDate;
   })
 
